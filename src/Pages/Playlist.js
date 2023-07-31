@@ -5,7 +5,6 @@ import { PlaylistCard } from "../Component/PlaylistCard";
 export function Playlist(){
     const { playlist,setPlaylist } = useDataContext();
     const [showForm,setShowForm] = useState(false);
-    console.log(playlist);
 
     const makeNewPlaylist = (event) => {
         let newPlaylist = {name: event.target.elements[0].value, description: event.target.elements[1].value, thumbnail: "https://source.unsplash.com/random/?music", videos: []}

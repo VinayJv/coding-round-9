@@ -1,4 +1,4 @@
-import { createContext,useContext, useEffect, useState } from "react";
+import { createContext,useContext, useState } from "react";
 import { categories } from "../Database/Data";
 import { videos } from "../Database/Data";
 import { useNavigate } from "react-router-dom";

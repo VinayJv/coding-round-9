@@ -1,5 +1,4 @@
 import './App.css';
-import { useDataContext } from './Context/DataContext';
 import { Route,Routes } from "react-router-dom";
 import { Landing } from './Pages/Landing';
 import { NavBar } from './Component/NavBar';
@@ -8,8 +7,9 @@ import { Playlist } from './Pages/Playlist';
 import { WatchLater } from './Pages/WatchLater';
 import { Listing } from './Pages/Listing';
 import { SingleVideo } from './Pages/SingleVideo';
+import { PlaylistContent } from './Pages/PlaylistContent';
+
 function App() {
-  const { category } = useDataContext();
   return (
     <div className="App">
       <NavBar></NavBar>
@@ -19,6 +19,7 @@ function App() {
         <Route path='/video/:videoTitle' element={<SingleVideo />}></Route>
         <Route path='/explore' element={<Explore />}></Route>
         <Route path='/playlist' element={<Playlist />}></Route>
+        <Route path='/playlist/:playlistName' element={<PlaylistContent />}></Route>
         <Route path='/watch-later' element={<WatchLater/>}></Route>
       </Routes>
     </div>

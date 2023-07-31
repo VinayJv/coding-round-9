@@ -1,6 +1,5 @@
 import { useParams } from "react-router";
 import { useDataContext } from "../Context/DataContext";
-import { MdWatchLater } from "react-icons/md";
 import { Card } from "../Component/Card";
 
 export function Listing(){
